@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.hingehider.homekitbutton</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Volumes/RAID5/Documents/github/homekit-button-orvis/cb/bin/python3</string>
+    <string>/Volumes/RAID5/Documents/github/homekit-button-orvis/onvis_webhook.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Volumes/RAID5/Documents/github/homekit-button-orvis</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/cbergeron/Library/Logs/onvis_webhook.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/cbergeron/Library/Logs/onvis_webhook.err</string>
+</dict>
+</plist>
