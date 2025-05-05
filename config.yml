@@ -17,7 +17,7 @@ button3:
 
 button4:
   type: api
-  url: "http://localhost:7000/do-something"
+  url: "http://gpserver:7676/admin/api.php?disable=300&auth=956e5417d1ce58eb420998d69dfd2850e7c639706715335d78447f7db4cd7f6e"
   method: GET
 
 button5:
