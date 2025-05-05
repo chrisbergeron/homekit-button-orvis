@@ -4,12 +4,14 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.hingehider.homekitbutton</string>
+  <string>com.chrisbergeron.homekitbutton</string>
 
   <key>ProgramArguments</key>
   <array>
     <string>/Volumes/RAID5/Documents/github/homekit-button-orvis/cb/bin/python3</string>
     <string>/Volumes/RAID5/Documents/github/homekit-button-orvis/onvis_webhook.py</string>
+    <string>--config</string>
+    <string>/Volumes/RAID5/Documents/github/homekit-button-orvis/config.yml</string>
   </array>
 
   <key>WorkingDirectory</key>

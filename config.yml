@@ -1,0 +1,25 @@
+button1:
+  type: api
+  url: "http://example.com/api/foo"
+  method: POST
+  headers:
+    Authorization: "Bearer my-token"
+    Content-Type: "application/json"
+  body: '{"source": "onvis", "action": "foo"}'
+
+button2:
+  type: shell
+  command: "/usr/local/bin/my_script.sh arg1"
+
+button3:
+  type: shell
+  command: "say 'Button three was pressed'"
+
+button4:
+  type: api
+  url: "http://localhost:7000/do-something"
+  method: GET
+
+button5:
+  type: shell
+  command: "osascript -e 'display notification \"Onvis 5 pressed\"'"

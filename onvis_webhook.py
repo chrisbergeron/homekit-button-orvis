@@ -1,14 +1,19 @@
+import argparse
+import yaml
 from flask import Flask, request, jsonify
 import subprocess
 import requests
-import yaml
-import os
 
-app = Flask(__name__)
+# Argument parsing
+parser = argparse.ArgumentParser()
+parser.add_argument('--config', default='config.yml', help='Path to config file')
+args = parser.parse_args()
 
 # Load YAML config
-with open("config.yml", "r") as f:
+with open(args.config, "r") as f:
     CONFIG = yaml.safe_load(f)
+
+app = Flask(__name__)
 
 @app.route("/api/onvis/<button_id>", methods=["POST"])
 def handle_button(button_id):
