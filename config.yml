@@ -3,7 +3,7 @@ button1:
   url: "http://example.com/api/foo"
   method: POST
   headers:
-    Authorization: "Bearer my-token"
+    Authorization: "bf58cc5efa6aa11"
     Content-Type: "application/json"
   body: '{"source": "onvis", "action": "foo"}'
 
@@ -13,11 +13,11 @@ button2:
 
 button3:
   type: shell
-  command: "say 'Button three was pressed'"
+  command: "say 'what is up smelly?'"
 
 button4:
   type: api
-  url: "http://gpserver:7676/admin/api.php?disable=300&auth=956e5417d1ce58eb420998d69dfd2850e7c639706715335d78447f7db4cd7f6e"
+  url: "http://SERVERNAME/admin/api.php?disable=300&auth=APIKEY"
   method: GET
 
 button5:
